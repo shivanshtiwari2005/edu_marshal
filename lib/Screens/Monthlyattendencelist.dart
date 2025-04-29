@@ -217,11 +217,16 @@ class AttendanceListCard1 extends StatelessWidget {
     );
   }
 
+
+// some changes done
+
  Widget _buildAttendanceWidget(bool attended) {
     return Card(
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(10),
-      ),
+      ),   
+
+
       color: attended ? Color(0xff00CE46) : Color(0xffF75757), // Present/Absent Color
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
