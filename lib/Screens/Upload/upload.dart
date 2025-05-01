@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'dart:io';
 
 // import 'package:flutter_full_pdf_viewer_null_safe/full_pdf_viewer_scaffold.dart';
-import 'package:edumarshals/main.dart';
+import 'package:edu_marshal/main.dart';
 import 'package:dio/dio.dart';
 import 'package:dotted_border/dotted_border.dart';
 // import 'package:edumarshals/Screens/Attendance/OverAllAttendance.dart';
