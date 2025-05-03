@@ -1,3 +1,4 @@
+
 import 'dart:async';
 
 import 'dart:core';
@@ -6,17 +7,17 @@ import 'package:edu_marshal/main.dart';
 //import 'package:flutter/material.dart';
 //import 'package:edumarshals/Model/time_table_model.dart';
 //import 'dart:convert';
-import 'package:http/http.dart' as http;
+import  'package:http/http.dart' as http;
 //...............repository for intigrating the timetable Get Api..................//
-class DocumentRepository {
+class ExamTimetableRepository {
   static const String apiUrl =
-      'https://akgec-edu.onrender.com/v1/student/profile/documents';
+      'https://akgec-edu.onrender.com/v1/student/exam/timetable';
   static  String token = '${PreferencesManager().token}';
 
-  Future<String?> fetchDocuments() async {
+  Future<String?> fetchExamTimetable() async {
     try {
       var request = http.Request('GET', Uri.parse(apiUrl));
-//..............accessToken is send to cookie of the header ....which is stored in PreferencesManager.............//
+//..............accessToken is send inside the cookie of the header ....which is stored in PreferencesManager.............//
       request.headers['Cookie'] = 'accessToken=$token'; 
       http.StreamedResponse response = await request.send();
 
@@ -33,4 +34,3 @@ class DocumentRepository {
     }
   }
 }
-
