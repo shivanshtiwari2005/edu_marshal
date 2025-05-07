@@ -3,20 +3,20 @@ import 'package:bottom_sheet/bottom_sheet.dart';
 import 'package:custom_radio_grouped_button/custom_radio_grouped_button.dart';
 import 'package:easy_date_timeline/easy_date_timeline.dart';
 // import 'package:edumarshals/Utils/floating_action%20_button.dart';
-import 'package:edumarshals/Model/student_attendance_data_model.dart';
-import 'package:edumarshals/Utils/attendance_list_card.dart';
-import 'package:edumarshals/Utils/daily_attendance_card.dart';
-import 'package:edumarshals/Utils/floating_action%20_button.dart';
-import 'package:edumarshals/Utils/weekly_widget.dart';
-import 'package:edumarshals/Widget/AttendanceCard.dart';
-import 'package:edumarshals/Widget/CustomAppBar.dart';
-import 'package:edumarshals/main.dart';
-import 'package:edumarshals/repository/overall_attendance_repository.dart';
+import 'package:edu_marshal/Model/student_attendence_data.dart';
+import 'package:edu_marshal/Utils/attendence_list_card.dart';
+import 'package:edu_marshal/Utils/daily_attendence_list_card.dart';
+import 'package:edu_marshal/Utils/floating_action_button.dart';
+import 'package:edu_marshal/Utils/weekly_widget.dart';
+import 'package:edu_marshal/Widget/AttendenceCard.dart';
+import 'package:edu_marshal/Widget/CustomAppBar.dart';
+import 'package:edu_marshal/main.dart';
+import 'package:edu_marshal/repository/overall_attendence_repository.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_expandable_fab/flutter_expandable_fab.dart';
 
-import '../../Widget/CommonDrawer.dart';
+import '../../Widget/CommonDrawer.dart'; // Import without alias to use CommonDrawer directly
 
 class barGraph extends StatefulWidget {
   final String userName;
@@ -158,7 +158,7 @@ class barGraphState extends State<barGraph> {
         Gkey: _key,
       ),
 
-      appBar: CustomAppBar(
+      appBar: CustomAppBar( // Ensure this refers to the correct library
         userName: PreferencesManager().name,
         userImage: PreferencesManager().studentPhoto,
         onTap: () {
@@ -166,7 +166,7 @@ class barGraphState extends State<barGraph> {
         },
         scaffoldKey_: scaffoldKey_, // Pass the _scaffoldKey
       ),
-      drawer: CommonDrawer(
+      drawer: CommonDrawer( // Ensure this refers to the correct widget
         scaffoldKey_: scaffoldKey_, currentIndex: 1, // Pass the _scaffoldKey
       ),
       body: Padding(
@@ -222,7 +222,7 @@ class barGraphState extends State<barGraph> {
                           ),
                         ],
                       )
-                    : Center(
+                    : const Center(
                         child: SizedBox(
                           height: 50, // Adjust the height as needed
                           width: 50, // Adjust the width as needed
@@ -240,7 +240,7 @@ class barGraphState extends State<barGraph> {
               SizedBox(
                 height: sheight * 0.03,
               ),
-              Row(
+             const Row(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   SizedBox(width: 8),
@@ -256,7 +256,7 @@ class barGraphState extends State<barGraph> {
                     height: sheight * 0.1,
                     width: swidth * 0.25,
                     alignment: Alignment.center,
-                    child: Column(
+                    child:const Column(
                       children: [
                         Row(
                           children: [
@@ -507,10 +507,10 @@ class barGraphState extends State<barGraph> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     width: 4,
                   ),
-                  Text(
+                  const Text(
                     "  Attendance",
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
                   ),
@@ -522,7 +522,7 @@ class barGraphState extends State<barGraph> {
                   )
                 ],
               ),
-              Text(
+              const Text(
                 "Time",
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
               ),
@@ -538,13 +538,13 @@ class barGraphState extends State<barGraph> {
                 elevation: 0,
                 absoluteZeroSpacing: false,
                 unSelectedColor: Theme.of(context).canvasColor,
-                buttonLables: [
+                buttonLables: const [
                   'Monthly',
                   'Weekly',
                   'Daily',
                 ],
-                buttonValues: ['Monthly', 'Weekly', 'Daily'],
-                buttonTextStyle: ButtonTextStyle(
+                buttonValues:const['Monthly', 'Weekly', 'Daily'],
+                buttonTextStyle: const ButtonTextStyle(
                     selectedColor: Colors.white,
                     unSelectedColor: Color(0xff004BB8),
                     textStyle:
@@ -557,7 +557,7 @@ class barGraphState extends State<barGraph> {
               SizedBox(
                 height: sheight * 0.03,
               ),
-              Text(
+              const Text(
                 "Absence/Presence",
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
               ),
@@ -565,16 +565,16 @@ class barGraphState extends State<barGraph> {
                 enableShape: true,
                 unSelectedBorderColor: Color(0xff004BB8),
                 // selectedBorderColor: Colors.white,
-                buttonTextStyle: ButtonTextStyle(
+                buttonTextStyle: const ButtonTextStyle(
                     selectedColor: Colors.white,
                     unSelectedColor: Color(0xff004BB8),
                     textStyle: TextStyle(fontSize: 14)),
                 unSelectedColor: Theme.of(context).canvasColor,
-                buttonLables: [
+                buttonLables: const[
                   "Absent",
                   "Present",
                 ],
-                buttonValuesList: [
+                buttonValuesList: const[
                   "Absent",
                   "Present",
                 ],
@@ -596,7 +596,7 @@ class barGraphState extends State<barGraph> {
                   SizedBox(
                       width: swidth * 0.3,
                       child: ElevatedButton(
-                          style: ButtonStyle(
+                          style: const ButtonStyle(
                               backgroundColor:
                                   MaterialStatePropertyAll(Color(0xff004BB8)),
                               foregroundColor:
@@ -632,7 +632,7 @@ class barGraphState extends State<barGraph> {
                   decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(12)),
-                  dayNumStyle: TextStyle(
+                  dayNumStyle: const TextStyle(
                       color: Color(0xff004BB8), fontWeight: FontWeight.w500),
                   dayStrStyle: TextStyle(
                       color: Color(0xff004BB8), fontWeight: FontWeight.w500))),

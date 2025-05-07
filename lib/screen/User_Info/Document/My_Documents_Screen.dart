@@ -1,11 +1,11 @@
 // import 'package:edumarshals/Screens/OverAllAttendance.dart';
 import 'dart:convert';
 
-import 'package:edumarshals/Screens/User_Info/Document/Document_Image.dart';
-import 'package:edumarshals/Screens/User_Info/Profile.dart';
-import 'package:edumarshals/Widget/My_Document_View_Card.dart';
-import 'package:edumarshals/main.dart';
-import 'package:edumarshals/repository/Document_Repo.dart';
+import 'package:edu_marshal/screen/User_Info/Document/Document_Image.dart';
+import 'package:edu_marshal/screen/User_Info/Profile.dart';
+import 'package:edu_marshal/Widget/My_Document_View_Card.dart';
+import 'package:edu_marshal/main.dart';
+import 'package:edu_marshal/repository/Document_Repo.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

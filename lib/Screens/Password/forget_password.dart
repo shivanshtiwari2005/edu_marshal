@@ -1,9 +1,9 @@
 
 import 'dart:convert';
 
-import 'package:edumarshals/Screens/Password/Verify_Otp.dart';
-import 'package:edumarshals/Utils/Utilities/utilities2.dart';
-import 'package:edumarshals/main.dart';
+import 'package:edu_marshal/Screens/Password/Verify_Otp.dart';
+import 'package:edu_marshal/Utils/Utilities/utilities2.dart';
+import 'package:edu_marshal/main.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 

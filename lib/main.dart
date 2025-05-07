@@ -1,20 +1,20 @@
 import 'dart:io';
 
-import 'package:edumarshals/Screens/Attendance/OverAllAttendance.dart';
-import 'package:edumarshals/Screens/Attendance/subject_wise_attendance.dart';
-import 'package:edumarshals/Screens/Login/login.dart';
-import 'package:edumarshals/Screens/Notes_Assignment/Subject_Assignment.dart';
-import 'package:edumarshals/Screens/User_Info/Personal_Info/Personal_Info_Data.dart';
+import 'package:edu_marshal/screen/Attendence/OverAllAttendence.dart';
+import 'package:edu_marshal/Screens/Attendence/subject_wise_attendence.dart';
+import 'package:edu_marshal/Screen/Login/login.dart';
+import 'package:edu_marshal/Screen/Notes_Assignment/Subject_Assignment.dart';
+import 'package:edu_marshal/Screen/User_Info/Personal_Info/Personal_Info_Data.dart';
 // import 'package:edumarshals/Screens/User_Info/Personal_Info/profile_info.dart';
-import 'package:edumarshals/Screens/User_Info/Profile.dart';
-import 'package:edumarshals/Screens/User_Info/Subject_Data.dart';
-import 'package:edumarshals/Screens/splash.dart';
-import 'package:edumarshals/screens/time_table.dart';
+import 'package:edu_marshal/Screen/User_Info/Profile.dart';
+import 'package:edu_marshal/Screens/User_Info/Subject_Data.dart';
+import 'package:edu_marshal/Screen/splash.dart';
+import 'package:edu_marshal/screen/time_table.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'Screens/HomePage/Homepage.dart';
+import 'Screen/HomePage/Homepage.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

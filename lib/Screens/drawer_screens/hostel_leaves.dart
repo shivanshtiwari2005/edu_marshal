@@ -2,14 +2,14 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:buttons_tabbar/buttons_tabbar.dart';
-import 'package:edumarshals/Utils/custom_textfield.dart';
-import 'package:edumarshals/Widget/CustomAppBar.dart';
-import 'package:edumarshals/main.dart';
+import 'package:edu_marshal/Utils/custom_textfield.dart';
+import 'package:edu_marshal/Widget/CustomAppBar.dart';
+import 'package:edu_marshal/main.dart';
 import 'package:expandable_section/expandable_section.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 
-import '../../Widget/CommonDrawer.dart';
+import '../../Widget/CommonDrawer.dart' as commonDrawer; // Alias for CommonDrawer
 
 class hostelLeavePage extends StatefulWidget {
   hostelLeavePage({Key? key}) : super(key: key);
@@ -35,7 +35,7 @@ class _hostelLeavePageState extends State<hostelLeavePage> {
     return Scaffold(
       key: scaffoldKey_,
       backgroundColor: Color(0xffF2F6FF),
-      appBar: CustomAppBar(
+      appBar: CustomAppBar( // Ensure this refers to the correct CustomAppBar from CustomAppBar.dart
         userName: PreferencesManager().name,
         userImage: PreferencesManager().studentPhoto,
         onTap: () {

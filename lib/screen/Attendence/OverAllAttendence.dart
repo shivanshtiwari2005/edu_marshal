@@ -1,16 +1,15 @@
 
 // import 'package:edumarshals/model/student_attendance_data_model.dart';
-import 'package:edumarshals/Model/student_attendance_data_model.dart';
-import 'package:edumarshals/Screens/HomePage/Homepage.dart';
-import 'package:edumarshals/Utils/floating_action%20_button.dart';
-import 'package:edumarshals/Widget/AttendanceCard.dart';
+import 'package:edu_marshal/Model/student_attendence_data.dart';
+import 'package:edu_marshal/screen/HomePage/Homepage.dart';
+import 'package:edu_marshal/Utils/floating_action_button.dart';
+import 'package:edu_marshal/Widget/AttendenceCard.dart';
 // import '../Widget/CustomAppBar.dart';
-import 'package:edumarshals/Widget/CustomAppBar.dart';
-import 'package:edumarshals/Widget/SubjectAttendanceCard.dart';
-import 'package:edumarshals/display.dart';
-import 'package:edumarshals/main.dart';
+import 'package:edu_marshal/Widget/SubjectAttendenceCard.dart';
+import 'package:edu_marshal/display.dart';
+import 'package:edu_marshal/main.dart';
 // import 'package:edumarshals/repository/overall_attendance_repository.dart';
-import 'package:edumarshals/repository/overall_attendance_repository.dart';
+import 'package:edu_marshal/repository/overall_attendence_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_expandable_fab/flutter_expandable_fab.dart';
 

@@ -1,7 +1,7 @@
-import 'package:edumarshals/Model/Subject_Model.dart';
-import 'package:edumarshals/Screens/User_Info/Profile.dart';
-import 'package:edumarshals/main.dart';
-import 'package:edumarshals/repository/Subject_Repository.dart';
+import 'package:edu_marshal/Model/Subject_Model.dart';
+import 'package:edu_marshal/Screen/User_Info/Profile.dart';
+import 'package:edu_marshal/main.dart';
+import 'package:edu_marshal/repository/Subject_Repository.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -32,7 +32,7 @@ class _SubjectdataState extends State<Subjectdata> {
         title:  Center(
           child: Column(
             children: [
-              CircleAvatar(
+              const CircleAvatar(
                 // backgroundColor: Color.fromARGB(255, 194, 33, 243),
                 backgroundImage: AssetImage("assets/assets/Frame 48117 (2).png"),
                 

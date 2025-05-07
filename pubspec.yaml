@@ -35,6 +35,35 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  fl_chart: ^0.66.1
+  flutter_expandable_fab: ^2.0.0
+  bottom_sheet: ^4.0.0
+  flutter_spinkit: ^5.2.0
+  http: '>=0.13.6 <2.0.0'
+  intl: ^0.19.0
+  uuid:
+  percent_indicator: ^4.2.3
+  shared_preferences: ^2.2.2
+  path_provider: ^2.1.1
+  path: ^1.8.3
+  provider: ^6.0.5
+  pdf: ^3.10.7
+  flutter_full_pdf_viewer_null_safe: ^1.0.0
+  dotted_border: ^2.1.0
+  image_picker: ^1.0.7
+  google_fonts: ^6.1.0
+  custom_radio_grouped_button: ^2.2.1
+  easy_date_timeline: ^1.0.5
+  week_of_year: ^2.0.0
+  url_launcher: ^6.2.5
+  screenshot: ^2.1.0
+  flutter_pdfview: ^1.0.0
+  get: ^4.6.6
+  buttons_tabbar: ^1.3.8
+  file_picker: ^6.2.1
+  expandable_section: ^0.0.3
+  dio: ^5.4.3+1
+
 
 dev_dependencies:
   flutter_test:
@@ -60,9 +89,21 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
+  assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
+        - assets/assets/Frame 52.png
+        - assets/notes.png
+        - assets/images/
+        - Assets/
+        - assets/assets/Frame 48117.png
+        - assets/assets/bankcolor.png
+        - "assets/assets/buliding.png"
+
+        - asset/images/pdf1.png
+        - assets/
+        - asset/images/Group 63.png
+        - asset/images/user.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

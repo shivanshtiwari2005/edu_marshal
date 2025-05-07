@@ -1,6 +1,6 @@
-import 'package:edumarshals/Model/student_attendance_data_model.dart';
-import 'package:edumarshals/Screens/Monthlyattendancelist.dart';
-import 'package:edumarshals/repository/overall_attendance_repository.dart';
+import 'package:edu_marshal/Model/student_attendence_data.dart';
+import 'package:edu_marshal/Screens/Monthlyattendencelist.dart';
+import 'package:edu_marshal/repository/overall_attendence_repository.dart';
 import 'package:flutter/material.dart';
 
 class DisplayScreen extends StatefulWidget {

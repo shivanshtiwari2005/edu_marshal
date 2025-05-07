@@ -1,14 +1,14 @@
 
 import 'package:buttons_tabbar/buttons_tabbar.dart';
-import 'package:edumarshals/Utils/Utilities/custom_heading.dart';
-import 'package:edumarshals/Utils/custom_textfield.dart';
-import 'package:edumarshals/Widget/CustomAppBar.dart';
-import 'package:edumarshals/main.dart';
+import 'package:edu_marshal/Utils/Utilities/custom_heading.dart';
+import 'package:edu_marshal/Utils/custom_textfield.dart';
+import 'package:edu_marshal/Widget/CustomAppBar.dart' as customAppBar;
+import 'package:edu_marshal/main.dart';
 import 'package:expandable_section/expandable_section.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 
-import '../../Widget/CommonDrawer.dart';
+import '../../Widget/CommonDrawer.dart'; // Ensure this import points to the correct file where CommonDrawer is defined
 
 class feesPage extends StatefulWidget {
   const feesPage({super.key});
@@ -43,7 +43,7 @@ class _feesPageState extends State<feesPage> {
     return Scaffold(
       key: scaffoldKey_,
       backgroundColor: Color(0xffF2F6FF),
-      appBar: CustomAppBar(
+      appBar: customAppBar.CustomAppBar(
         userName: PreferencesManager().name,
         userImage: PreferencesManager().studentPhoto,
         onTap: () {
@@ -75,7 +75,7 @@ class _feesPageState extends State<feesPage> {
                     fontSize: screenWidth *
                         0.04, // Adjusted font size using screenWidth
                   ),
-                  tabs: [
+                  tabs:const [
                     Tab(
                       text: "Fee Structure",
                     ),

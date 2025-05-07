@@ -2,8 +2,8 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:edu_marshal/screen/HomePage/Homepage.dart';
-import 'package:edumarshals/Screens/Password/forget_password.dart';
-import 'package:edumarshals/Utils/Utilities/utilities2.dart';
+import 'package:edu_marshal/Screens/Password/forget_password.dart';
+import 'package:edu_marshal/Utils/Utilities/utilities2.dart';
 import 'package:edu_marshal/main.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;

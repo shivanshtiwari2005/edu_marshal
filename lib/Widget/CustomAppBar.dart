@@ -1,8 +1,8 @@
 
 import 'package:flutter/material.dart';
-import 'package:edumarshals/Screens/User_Info/Profile.dart';
-import 'package:edumarshals/Widget/CommonDrawer.dart';
-import 'package:edumarshals/main.dart';
+import 'package:edu_marshal/Screen/User_Info/Profile.dart';
+import 'package:edu_marshal/Widget/CommonDrawer.dart';
+import 'package:edu_marshal/main.dart';
 
 class CustomAppBar extends StatefulWidget implements PreferredSizeWidget {
   final String userName;

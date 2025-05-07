@@ -1,26 +1,26 @@
-import 'package:edumarshals/Model/assignment_Model.dart';
-import 'package:edumarshals/Model/student_attendance_data_model.dart';
-import 'package:edumarshals/Screens/Attendance/OverAllAttendance.dart';
-import 'package:edumarshals/Screens/Events/Events_Page.dart';
-import 'package:edumarshals/Screens/Notes_Assignment/ClassNotesPage.dart';
-import 'package:edumarshals/Screens/Notes_Assignment/Subject_Assignment.dart';
-import 'package:edumarshals/Utils/Utilities/Utilities.dart';
-import 'package:edumarshals/Widget/AttendanceCard.dart';
-import 'package:edumarshals/main.dart';
+import 'package:edu_marshal/Model/assignment_Model.dart';
+import 'package:edu_marshal/Model/student_attendence_data.dart';
+import 'package:edu_marshal/Screens/Events/Events_Page.dart';
+import 'package:edu_marshal/screen/Notes_Assignment/ClassNotesPage.dart';
+import 'package:edu_marshal/screen/Notes_Assignment/Subject_Assignment.dart';
+import 'package:edu_marshal/Utils/Utilities/Utilities.dart';
+import 'package:edu_marshal/Widget/AttendenceCard.dart';
+import 'package:edu_marshal/main.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:edumarshals/repository/assignment_Repository.dart';
-import 'package:edumarshals/repository/overall_attendance_repository.dart';
+import 'package:edu_marshal/repository/assignment_Repository.dart';
+import 'package:edu_marshal/repository/overall_attendence_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_expandable_fab/flutter_expandable_fab.dart';
 import '../../Model/classnotes_Model.dart';
-import '../../Utils/floating_action _button.dart';
-import 'package:edumarshals/repository/classnotes_Repo.dart';
-import '../../Widget/CommonDrawer.dart';
-import '../../Widget/CustomAppBar.dart';
-import 'homepage_utils.dart'; // Import the new file
+import '../../Utils/floating_action_button.dart';
+import 'package:edu_marshal/repository/classnotes_Repo.dart';
+import 'package:edu_marshal/Widget/CommonDrawer.dart'; // Ensure this file contains the CommonDrawer widget or define it properly
+import 'package:edu_marshal/Widget/CustomAppBar.dart' as custom_app_bar;
+import 'package:edu_marshal/Screens/HomePage/homepage_utils.dart'; // Import the new file
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
+  
 
   @override
   State<Homepage> createState() => _HomepageState();
@@ -71,7 +71,7 @@ class _HomepageState extends State<Homepage> {
       floatingActionButton: custom_floating_action_button(Gkey: _key),
       key: scaffoldKey_,
       backgroundColor: const Color(0xffEBF3FF),
-      appBar: CustomAppBar(
+      appBar: custom_app_bar.CustomAppBar(
         userName: PreferencesManager().name,
         userImage: PreferencesManager().studentPhoto,
         onTap: () {
@@ -100,12 +100,12 @@ class _HomepageState extends State<Homepage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
+                      const Text(
                         'All Subjects',
                         style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                       ),
                       TextButton(
-                        child: Text(
+                        child: const Text(
                           'View All',
                           style: TextStyle(fontSize: 14, color: Color(0xff004BB8)),
                         ),

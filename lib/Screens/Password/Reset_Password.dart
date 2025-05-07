@@ -1,8 +1,8 @@
 
 import 'dart:convert';
 
-import 'package:edumarshals/Screens/Login/login.dart';
-import 'package:edumarshals/Screens/Password/forget_password.dart';
+import 'package:edu_marshal/Screen/Login/login.dart';
+import 'package:edu_marshal/Screens/Password/forget_password.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 

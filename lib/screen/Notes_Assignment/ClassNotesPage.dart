@@ -1,8 +1,8 @@
-import 'package:edumarshals/Model/classnotes_Model.dart'; // Import the ClassNotes model
-import 'package:edumarshals/Repository/classnotes_Repo.dart'; // Import the ClassNotesRepository
-import 'package:edumarshals/Utils/floating_action%20_button.dart';
+import 'package:edu_marshal/Model/classnotes_Model.dart'; // Import the ClassNotes model
+import 'package:edu_marshal/Repository/classnotes_Repo.dart'; // Import the ClassNotesRepository
+import 'package:edu_marshal/Utils/floating_action_button.dart';
 // import 'package:edumarshals/Utilities/Utilities.dart';
-import 'package:edumarshals/Widget/CustomAppBar.dart';
+import 'package:edu_marshal/Widget/CustomAppBar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_expandable_fab/flutter_expandable_fab.dart';
 import 'package:url_launcher/url_launcher.dart';

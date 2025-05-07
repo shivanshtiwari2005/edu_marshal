@@ -1,7 +1,7 @@
 // import 'package:edumarshals/screens/login.dart';
-import 'package:edumarshals/Screens/Login/login.dart';
-import 'package:edumarshals/Utils/Utilities/utilities2.dart';
-import 'package:edumarshals/main.dart';
+import 'package:edu_marshal/Screen/Login/login.dart';
+import 'package:edu_marshal/Utils/Utilities/utilities2.dart';
+import 'package:edu_marshal/main.dart';
 import 'package:flutter/material.dart';
 
 class guardianInfo extends StatefulWidget {

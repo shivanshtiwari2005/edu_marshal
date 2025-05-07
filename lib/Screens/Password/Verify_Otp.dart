@@ -1,9 +1,9 @@
 
 import 'dart:convert';
 
-import 'package:edumarshals/Screens/Password/Reset_Password.dart';
-import 'package:edumarshals/Screens/Password/forget_password.dart';
-import 'package:edumarshals/main.dart';
+import 'package:edu_marshal/Screens/Password/Reset_Password.dart';
+import 'package:edu_marshal/Screens/Password/forget_password.dart';
+import 'package:edu_marshal/main.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 

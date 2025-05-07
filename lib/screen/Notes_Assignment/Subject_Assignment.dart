@@ -1,9 +1,9 @@
-import 'package:edumarshals/Model/assignment_Model.dart';
-import 'package:edumarshals/Utils/floating_action%20_button.dart';
-import 'package:edumarshals/Widget/CustomAppBar.dart';
-import 'package:edumarshals/Widget/Subject_Assignment_Card.dart';
-import 'package:edumarshals/main.dart';
-import 'package:edumarshals/repository/assignment_Repository.dart';
+import 'package:edu_marshal/Model/assignment_Model.dart';
+import 'package:edu_marshal/Utils/floating_action_button.dart';
+import 'package:edu_marshal/Widget/CustomAppBar.dart';
+import 'package:edu_marshal/Widget/Subject_Assignment_Card.dart';
+import 'package:edu_marshal/main.dart';
+import 'package:edu_marshal/repository/assignment_Repository.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_expandable_fab/flutter_expandable_fab.dart';
 import 'package:shared_preferences/shared_preferences.dart';

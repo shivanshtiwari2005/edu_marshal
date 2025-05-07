@@ -1,12 +1,12 @@
 
-import 'package:edumarshals/Model/Event_Model.dart';
-import 'package:edumarshals/Widget/CustomAppBar.dart';
-import 'package:edumarshals/Widget/Event_Custom_Widget.dart';
-import 'package:edumarshals/main.dart';
-import 'package:edumarshals/repository/Event_Repository.dart';
+import 'package:edu_marshal/Model/Event_Model.dart';
+import 'package:edu_marshal/Widget/CustomAppBar.dart' as custom_app_bar;
+import 'package:edu_marshal/Widget/Event_Custom_Widget.dart';
+import 'package:edu_marshal/main.dart';
+import 'package:edu_marshal/repository/Event_Repository.dart';
 import 'package:flutter/material.dart';
 
-import '../../Widget/CommonDrawer.dart';
+import 'package:edu_marshal/Widget/CommonDrawer.dart'; // Ensure this file contains the definition of the CommonDrawer widget
 
 class EventsPage extends StatefulWidget {
   const EventsPage({Key? key});
@@ -22,7 +22,7 @@ class _EventsPageState extends State<EventsPage> {
     return Scaffold(
       key: scaffoldKey_,
       backgroundColor: Color.fromRGBO(242, 246, 255, 1),
-      appBar: CustomAppBar(
+      appBar: custom_app_bar.CustomAppBar(
         userName: PreferencesManager().name,
         userImage: PreferencesManager().studentPhoto,
         onTap: () {
@@ -30,8 +30,23 @@ class _EventsPageState extends State<EventsPage> {
         },
         scaffoldKey_: scaffoldKey_, // Pass the _scaffoldKey
       ),
-      drawer: CommonDrawer(
-        scaffoldKey_: scaffoldKey_, currentIndex: 2, // Pass the _scaffoldKey
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            ListTile(
+              title: Text('Menu Item 1'),
+              onTap: () {
+                // Handle menu item tap
+              },
+            ),
+            ListTile(
+              title: Text('Menu Item 2'),
+              onTap: () {
+                // Handle menu item tap
+              },
+            ),
+          ],
+        ),
       ),
 
       body: 

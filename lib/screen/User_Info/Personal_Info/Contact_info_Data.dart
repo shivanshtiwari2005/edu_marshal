@@ -1,7 +1,7 @@
 // import 'package:flutter/material.dart';
-import 'package:edumarshals/Utils/Utilities/utilities2.dart';
-import 'package:edumarshals/main.dart';
-import 'package:edumarshals/repository/Contact_Info_Repo.dart';
+import 'package:edu_marshal/Utils/Utilities/utilities2.dart';
+import 'package:edu_marshal/main.dart';
+import 'package:edu_marshal/repository/Contact_Info_Repo.dart';
 // import 'package:edumarshals/repository/PersonalInforepo.dart';
 import 'package:flutter/material.dart';
 // import 'package:your_app/personal_info_repository.dart'; // Import your repository

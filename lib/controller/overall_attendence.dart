@@ -1,7 +1,7 @@
 
-import 'package:edumarshals/Model/student_attendance_data_model.dart';
-import 'package:edumarshals/main.dart';
-import 'package:edumarshals/repository/overall_attendance_repository.dart';
+import 'package:edu_marshal/Model/student_attendence_data.dart';
+import 'package:edu_marshal/main.dart';
+import 'package:edu_marshal/repository/overall_attendence_repository.dart';
 import 'package:get/get.dart';
 
 class ApiController extends GetxController {

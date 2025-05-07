@@ -1,7 +1,7 @@
 
 import 'dart:convert';
 
-import 'package:edumarshals/Model/student_attendance_data_model.dart';
+import 'package:edu_marshal/Model/student_attendence_data.dart';
 import 'package:edu_marshal/main.dart';
 import 'package:http/http.dart' as http;
 // import 'package:edumarshals/modules/student_attendance_data_model.dart';

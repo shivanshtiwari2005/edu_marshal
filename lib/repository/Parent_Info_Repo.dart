@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:edumarshals/main.dart';
+import 'package:edu_marshal/main.dart';
 import 'package:http/http.dart' as http;
 
 class ParentInfoRepository {

@@ -3,16 +3,16 @@ import 'package:bottom_sheet/bottom_sheet.dart';
 import 'package:custom_radio_grouped_button/custom_radio_grouped_button.dart';
 import 'package:easy_date_timeline/easy_date_timeline.dart';
 // import 'package:edumarshals/Utils/floating_action%20_button.dart';
-import 'package:edumarshals/Model/student_attendance_data_model.dart';
-import 'package:edumarshals/Utils/attendance_list_card.dart';
-import 'package:edumarshals/Utils/daily_attendance_card.dart';
-import 'package:edumarshals/Utils/floating_action%20_button.dart';
-import 'package:edumarshals/Utils/weekly_widget.dart';
-import 'package:edumarshals/Widget/AttendanceCard.dart';
-import 'package:edumarshals/Widget/CommonDrawer.dart';
-import 'package:edumarshals/Widget/CustomAppBar.dart';
-import 'package:edumarshals/main.dart';
-import 'package:edumarshals/repository/overall_attendance_repository.dart';
+import 'package:edu_marshal/Model/student_attendence_data.dart';
+import 'package:edu_marshal/Utils/attendence_list_card.dart';
+import 'package:edu_marshal/Utils/daily_attendence_list_card.dart';
+import 'package:edu_marshal/Utils/floating_action_button.dart';
+import 'package:edu_marshal/Utils/weekly_widget.dart';
+import 'package:edu_marshal/Widget/AttendenceCard.dart';
+import 'package:edu_marshal/Widget/CommonDrawer.dart'; // Ensure this import is correct and the file exists
+import 'package:edu_marshal/Widget/CustomAppBar.dart' as custom_app_bar;
+import 'package:edu_marshal/main.dart';
+import 'package:edu_marshal/repository/overall_attendence_repository.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_expandable_fab/flutter_expandable_fab.dart';
@@ -220,7 +220,7 @@ final GlobalKey<ScaffoldState> scaffoldKey_ = GlobalKey<ScaffoldState>();
       floatingActionButton: custom_floating_action_button(Gkey: _key,),
       key: scaffoldKey_,
       appBar:
-          CustomAppBar(
+          custom_app_bar.CustomAppBar(
         userName: PreferencesManager().name,
         userImage: PreferencesManager().studentPhoto,
         onTap: () {
@@ -229,7 +229,7 @@ final GlobalKey<ScaffoldState> scaffoldKey_ = GlobalKey<ScaffoldState>();
         scaffoldKey_: scaffoldKey_,// Pass the _scaffoldKey
       ),
       drawer: CommonDrawer(
-        scaffoldKey_: scaffoldKey_, currentIndex: 0, // Pass the _scaffoldKey
+        scaffoldKey_: scaffoldKey_, currentIndex: 0, // Ensure CommonDrawer is defined in the imported file
       ),
       body: 
       Padding(
@@ -289,7 +289,7 @@ final GlobalKey<ScaffoldState> scaffoldKey_ = GlobalKey<ScaffoldState>();
                           ),
                         ],
                       )
-                    : Center(
+                    : const Center(
                         child: SizedBox(
                           height: 50, // Adjust the height as needed
                           width: 50, // Adjust the width as needed
@@ -304,10 +304,10 @@ final GlobalKey<ScaffoldState> scaffoldKey_ = GlobalKey<ScaffoldState>();
               //     title: "Mathematics",
               //     description: widget.subjectDescription),
 
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
-              Row(
+              const Row(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   SizedBox(width: 8),
@@ -323,7 +323,7 @@ final GlobalKey<ScaffoldState> scaffoldKey_ = GlobalKey<ScaffoldState>();
                     height: 50,
                     width: 100,
                     alignment: Alignment.center,
-                    child: Column(
+                    child: const Column(
                       children: [
                         Row(
                           children: [
@@ -488,7 +488,7 @@ final GlobalKey<ScaffoldState> scaffoldKey_ = GlobalKey<ScaffoldState>();
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     width: 4,
                   ),
                   Text(

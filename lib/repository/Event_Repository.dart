@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:edumarshals/Model/Event_Model.dart';
+import 'package:edu_marshal/Model/Event_Model.dart';
 import 'package:http/http.dart' as http;
 
 class EventRepository {

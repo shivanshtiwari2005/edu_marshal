@@ -1,10 +1,10 @@
 
-import 'package:edumarshals/Utils/Utilities/Utilities.dart';
+import 'package:edu_marshal/Utils/Utilities/Utilities.dart';
 import 'package:flutter/material.dart';
-import 'package:edumarshals/Model/assignment_Model.dart';
-import 'package:edumarshals/Model/classnotes_Model.dart';
-import 'package:edumarshals/Screens/Notes_Assignment/ClassNotesPage.dart';
-import 'package:edumarshals/Screens/Notes_Assignment/Subject_Assignment.dart';
+import 'package:edu_marshal/Model/assignment_Model.dart';
+import 'package:edu_marshal/Model/classnotes_Model.dart';
+import 'package:edu_marshal/Screen/Notes_Assignment/ClassNotesPage.dart';
+import 'package:edu_marshal/Screen/Notes_Assignment/Subject_Assignment.dart';
 
 // Handle Class Notes Snapshot
 Widget handleClassNotesSnapshot(
@@ -24,7 +24,7 @@ Widget handleClassNotesSnapshot(
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
+            const Text(
               'Recent Class Notes',
               style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
             ),
